@@ -2,41 +2,69 @@
  Scrivi una funzione chiamata "crazySum" che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma di quei due valori, ma se il loro valore è lo stesso allora deve ritornare la loro somma moltiplicata per 3.
 */
-let crazySum=function(x,y){
-if(x===y){
-    return (x+y)*3;
-}else{
-    return x+y
-}
-}
-let risultato=crazySum(20,10)
-console.log(risultato)
-
+let crazySum = function (x, y) {
+  if (x === y) {
+    return (x + y) * 3;
+  } else {
+    return x + y;
+  }
+};
+let risultato = crazySum(20, 10);
+console.log(risultato);
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "boundary", che accetta un numero intero come parametro e ritorna true se tale parametro è incluso tra 20 e 100 (incluso) o se è esattamente uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+let boundary = function (x) {
+  if ((x > 20 && x < 100) || (x = 400)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+let prova = boundary(400);
+console.log(prova);
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let reverseString = function (stringa) {
+  let convertiStringa = stringa.split("");
+  for (let i = convertiStringa.length - 1; i >= 0; i--) {
+    let arrayConvertito = convertiStringa[i];
+  }
+};
+reverseString("EPICODE");
+
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let upperFirst=function(stringa){
+   let parole=[]
+ parole=stringa.split(" ")
+ console.log(parole)
+ for(i=0;i>parole.length[0];i++){
+    let firstUpper=parole[i]
+//   firstUpper.charat(0)
+  console.log(firstUpper)
+ }
+}
+upperFirst("ciao a tutti")
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let giveMeRandom=function(n){
+    let random=[]
+    for(i=0;i<=n;i++) random.push(math.random()*10)
+    console.log (random)
 
+}
+giveMeRandom=(10)
 //EXTRA:
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
